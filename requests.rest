@@ -1,0 +1,51 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWljaGFlbGEiLCJpYXQiOjE1OTQ5MjMwMDl9.0oDyOA4lLQ0a3Spr4gvJRnjQLibcH9_TbtB9JdYKQsg
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "michaela"
+}
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "test@louw.com",
+    "password": "mypassword"
+}
+###
+POST http://localhost:3000/api/accounts
+Content-Type: application/json
+Authorization: Bearer 1000.fca6289e931538911943bd1751d4be18.5aad4cbdc8c713b85f21081a58be8d6b
+
+{
+    "data": [{
+        "Account_Name": "Gemini Louw Created with API"
+    }]
+}
+###
+GET http://localhost:3000/api/tokens
+Content-Type: application/json
+
+{
+    [{
+        
+    }]
+}
+
+###
+GET http://localhost:3000/api/account
+Content-Type: application/json
+
+{
+    "data" : [{
+        
+    }]
+}
